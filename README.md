@@ -216,27 +216,82 @@ local obfuscated = obi.obfuscate(source_code, {
 })
 ```
 
-Security Considerations
-
-⚠️ Warning: This obfuscator is designed for legitimate use cases such as:
-
-· Protecting proprietary algorithms
-· Safeguarding intellectual property
-· Preventing unauthorized access to premium features
-· Securing license validation mechanisms
-
-Not recommended for:
-
-· Malicious code concealment
-· Bypassing security measures
-· Unauthorized software modification
-· Hiding malicious payloads
-
-Technical Notes
-
-· Requires Lua 5.1+ or LuaJIT
-· Some features require debug library access
-· OS detection features may not work in sandboxed environments
-· Full encryption significantly increases startup time
-· Heavily obfuscated code may trigger antivirus false positives
-· Some anti-tamper features may cause issues in restricted environments
+Achitzin:
+Current Obfuscation Techniques:
+```
+Control Flow Flattening
+Jump Table
+Coroutine-based execution
+Multi-layer flattening
+Random state ordering
+Dead state injection
+State encoding with bitwise rotation/XOR
+Trap sequence generation
+String encryption (XOR)
+String encryption (Caesar)
+String encryption (Base64)
+String encryption (bitwise NOT)
+String encryption (reverse)
+String encryption (polynomial)
+Multi-layer string encryption
+Number obfuscation (arithmetic)
+Number obfuscation (bitwise)
+Number obfuscation (nested expressions)
+Dynamic key generation
+String splitting
+String shuffling
+Full script encryption
+Identifier renaming
+Reserved keyword protection
+Random suffix hashing
+Environment detection (Linux)
+Environment detection (Windows)
+Environment detection (macOS)
+Environment detection (BSD)
+Environment detection (Android)
+Environment detection (Termux)
+VM detection (VMware)
+VM detection (VirtualBox)
+VM detection (QEMU)
+VM detection (KVM)
+VM detection (Xen)
+VM detection (Hyper-V)
+Container detection (Docker)
+Container detection (LXC/LXD)
+Container detection (Podman)
+Container detection (Kubernetes)
+Debugger detection
+Profiler detection (Valgrind)
+Profiler detection (GDB/LLDB)
+Profiler detection (strace/ltrace)
+Profiler detection (perf)
+API hooking detection
+Log redirection detection
+Code regeneration detection
+Proxy/tunnel detection
+Fake environment detection
+Timing attack
+Nested timing trap
+Function hashing (FNV-1a)
+Function hashing (DJB2)
+Periodic integrity check
+Chunk signature check
+String metatable lock
+Global proxy detection
+Error line consistency check
+Call frequency trap
+Execution trace detection
+Metatable decoy
+Poison mechanism
+Dead code injection
+Dummy function injection
+Inline garbage
+AT_CHECK injection
+Random expression injection
+Polymorphic code generation
+Dynamic code generation
+Metatable proxy
+Anti-decompilation
+Garbage collection manipulation
+Environment poisoning
+```
